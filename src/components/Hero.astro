@@ -1,0 +1,326 @@
+---
+---
+
+<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+  <!-- Animated background particles -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="particle absolute w-2 h-2 bg-cosmic-400/30 rounded-full animate-float" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="particle absolute w-1 h-1 bg-blush-400/40 rounded-full animate-float" style="top: 40%; left: 80%; animation-delay: 1s;"></div>
+    <div class="particle absolute w-3 h-3 bg-mint-400/20 rounded-full animate-float" style="top: 60%; left: 20%; animation-delay: 2s;"></div>
+    <div class="particle absolute w-1 h-1 bg-cosmic-300/50 rounded-full animate-float" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
+    <div class="particle absolute w-2 h-2 bg-blush-300/30 rounded-full animate-float" style="top: 30%; left: 60%; animation-delay: 4s;"></div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center relative z-10 pt-16 sm:pt-20">
+    <div class="mb-8 sm:mb-12">
+      <!-- Fun Interactive Name Display -->
+      <div class="mb-8 sm:mb-12">
+        <p class="text-base sm:text-lg md:text-xl text-slate-400 mb-4 sm:mb-6 font-medium animate-fade-in">Hello, I'm</p>
+        
+        <!-- Interactive Name with Hover Effects - Responsive -->
+        <div class="relative inline-block group cursor-pointer px-2 sm:px-4" id="name-container">
+          <!-- Mobile/Small screens: Stack names vertically -->
+          <div class="block sm:hidden">
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-cosmic-400 via-blush-400 to-mint-400 bg-clip-text text-transparent transition-all duration-500 hover:scale-105 select-none mb-2" id="interactive-name-mobile">
+              <span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 0ms;">M</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 50ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 100ms;">n</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 150ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 200ms;">s</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 250ms;">v</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 300ms;">i</span>
+            </h1>
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-cosmic-400 via-blush-400 to-mint-400 bg-clip-text text-transparent transition-all duration-500 hover:scale-105 select-none">
+              <span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 350ms;">A</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 400ms;">g</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 450ms;">r</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 500ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 550ms;">w</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 600ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 650ms;">l</span>
+            </h1>
+          </div>
+          
+          <!-- Tablet screens: Medium size, single line -->
+          <div class="hidden sm:block lg:hidden">
+            <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-cosmic-400 via-blush-400 to-mint-400 bg-clip-text text-transparent transition-all duration-500 hover:scale-105 select-none" id="interactive-name-tablet">
+              <span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 0ms;">M</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 50ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 100ms;">n</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 150ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 200ms;">s</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 250ms;">v</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 300ms;">i</span>
+              <span class="inline-block mx-2 text-slate-500">•</span>
+              <span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 350ms;">A</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 400ms;">g</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 450ms;">r</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 500ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 550ms;">w</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 600ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 650ms;">l</span>
+            </h1>
+          </div>
+          
+          <!-- Desktop screens: Large size, single line -->
+          <div class="hidden lg:block">
+            <h1 class="text-6xl xl:text-8xl font-bold bg-gradient-to-r from-cosmic-400 via-blush-400 to-mint-400 bg-clip-text text-transparent transition-all duration-500 hover:scale-105 select-none" id="interactive-name-desktop">
+              <span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 0ms;">M</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 50ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 100ms;">n</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 150ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 200ms;">s</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 250ms;">v</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 300ms;">i</span>
+              <span class="inline-block mx-4 text-slate-500">•</span>
+              <span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 350ms;">A</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 400ms;">g</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 450ms;">r</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 500ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 550ms;">w</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 600ms;">a</span><span class="inline-block hover:animate-bounce transition-all duration-300" style="animation-delay: 650ms;">l</span>
+            </h1>
+          </div>
+          
+          <!-- Floating sparkles around name - Responsive positioning -->
+          <div class="absolute -top-2 sm:-top-4 -left-2 sm:-left-4 w-2 sm:w-3 h-2 sm:h-3 bg-cosmic-400 rounded-full animate-ping opacity-75"></div>
+          <div class="absolute -top-1 sm:-top-2 -right-3 sm:-right-6 w-1 sm:w-2 h-1 sm:h-2 bg-blush-400 rounded-full animate-pulse opacity-60"></div>
+          <div class="absolute -bottom-2 sm:-bottom-3 left-1/4 w-1 sm:w-2 h-1 sm:h-2 bg-mint-400 rounded-full animate-bounce opacity-70"></div>
+          <div class="absolute -bottom-2 sm:-bottom-4 right-1/3 w-1 h-1 bg-cosmic-300 rounded-full animate-ping opacity-80"></div>
+          
+          <!-- Hover instruction - Responsive text -->
+          <p class="text-xs sm:text-sm text-slate-500 mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            ✨ <span class="hidden sm:inline">Hover over the letters!</span><span class="sm:hidden">Tap the letters!</span> ✨
+          </p>
+        </div>
+        
+        <!-- Animated underline - Responsive sizing -->
+        <div class="relative mt-4 sm:mt-6">
+          <div class="w-24 sm:w-32 h-0.5 sm:h-1 bg-gradient-to-r from-cosmic-400 to-blush-400 mx-auto rounded-full animate-pulse"></div>
+          <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-6 sm:w-8 h-0.5 sm:h-1 bg-white rounded-full animate-slide"></div>
+        </div>
+      </div>
+      
+      <!-- Terminal Display - Responsive -->
+      <div class="inline-block p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-800/30 backdrop-blur-sm border border-cosmic-500/20 mb-6 sm:mb-8 hover:border-cosmic-400/50 transition-all duration-300 max-w-full overflow-hidden">
+        <div class="flex items-center gap-2 mb-2">
+          <div class="flex space-x-1 sm:space-x-2">
+            <div class="w-2 sm:w-3 h-2 sm:h-3 bg-red-500 rounded-full animate-pulse"></div>
+            <div class="w-2 sm:w-3 h-2 sm:h-3 bg-yellow-500 rounded-full animate-pulse" style="animation-delay: 0.2s;"></div>
+            <div class="w-2 sm:w-3 h-2 sm:h-3 bg-green-500 rounded-full animate-pulse" style="animation-delay: 0.4s;"></div>
+          </div>
+        </div>
+        <div class="text-left">
+          <span class="font-mono text-cosmic-300 text-xs sm:text-sm block">manasvi@portfolio:~$ whoami</span>
+          <span class="font-mono text-mint-300 text-xs sm:text-sm block typing-effect">Backend Builder | AI Explorer</span>
+        </div>
+      </div>
+      
+      <!-- Animated rotating title - Responsive -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-cosmic-400 via-blush-400 to-mint-400 bg-clip-text text-transparent min-h-[1.2em] px-2">
+        <span id="rotating-title">Backend Builder</span>
+      </h2>
+      
+      <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4">
+        I build powerful systems, one line of code at a time. CS student passionate about creating elegant solutions to complex problems.
+      </p>
+    </div>
+
+    <!-- Action buttons - Responsive -->
+    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12 sm:mb-20 px-4">
+      <a href="#projects" class="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cosmic-500 to-blush-500 rounded-xl font-semibold text-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cosmic-500/25 sparkle-on-hover">
+        <span class="flex items-center justify-center gap-2">
+          Explore My Work
+          <svg class="w-4 sm:w-5 h-4 sm:h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </span>
+      </a>
+      
+      <a href="#contact" class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-slate-800/50 border border-cosmic-500/30 rounded-xl font-semibold text-cosmic-300 hover:bg-cosmic-500/10 hover:border-cosmic-400/50 transition-all duration-300 sparkle-on-hover">
+        Let's Connect
+      </a>
+    </div>
+
+    <!-- Scroll indicator - Responsive positioning -->
+    <div class="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2">
+      <div class="animate-bounce">
+        <svg class="w-5 sm:w-6 h-5 sm:h-6 text-cosmic-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes slide {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100px); }
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .animate-slide {
+    animation: slide 3s ease-in-out infinite;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+  
+  .typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40) 1s both;
+  }
+  
+  /* Individual letter hover effects - Responsive */
+  #interactive-name-mobile span:hover,
+  #interactive-name-tablet span:hover,
+  #interactive-name-desktop span:hover {
+    color: #fff;
+    text-shadow: 0 0 20px currentColor;
+    transform: scale(1.2) rotate(5deg);
+  }
+  
+  /* Touch devices - Add active states */
+  @media (hover: none) and (pointer: coarse) {
+    #interactive-name-mobile span:active,
+    #interactive-name-tablet span:active,
+    #interactive-name-desktop span:active {
+      color: #fff;
+      text-shadow: 0 0 20px currentColor;
+      transform: scale(1.2) rotate(5deg);
+    }
+  }
+  
+  /* Name container hover effects - Responsive */
+  #name-container:hover {
+    filter: drop-shadow(0 0 20px rgba(129, 140, 248, 0.3));
+  }
+  
+  @media (min-width: 640px) {
+    #name-container:hover {
+      filter: drop-shadow(0 0 30px rgba(129, 140, 248, 0.3));
+    }
+  }
+  
+  /* Sparkle animation for floating elements - Responsive */
+  @keyframes sparkle-float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+    50% { transform: translateY(-10px) rotate(180deg); opacity: 1; }
+  }
+  
+  @media (min-width: 640px) {
+    @keyframes sparkle-float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+      50% { transform: translateY(-15px) rotate(180deg); opacity: 1; }
+    }
+  }
+  
+  #name-container .absolute {
+    animation: sparkle-float 3s ease-in-out infinite;
+  }
+  
+  #name-container .absolute:nth-child(2) { animation-delay: 0.5s; }
+  #name-container .absolute:nth-child(3) { animation-delay: 1s; }
+  #name-container .absolute:nth-child(4) { animation-delay: 1.5s; }
+  #name-container .absolute:nth-child(5) { animation-delay: 2s; }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 639px) {
+    .typing-effect {
+      animation: typing 2s steps(20) 1s both;
+    }
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  @media (max-width: 639px) {
+    #name-container {
+      max-width: calc(100vw - 2rem);
+      overflow: hidden;
+    }
+  }
+</style>
+
+<script>
+  // Animated rotating title
+  const titles = [
+    "Backend Builder",
+    "AI Explorer", 
+    "System Architect",
+    "ML Engineer",
+    "Code Craftsperson",
+    "Tech Innovator",
+    "A founder",
+    "Full-Stack Developer"
+  ];
+  
+  let currentIndex = 0;
+  const titleElement = document.getElementById('rotating-title');
+  
+  function rotateTitle() {
+    if (titleElement) {
+      // Fade out
+      titleElement.style.opacity = '0';
+      titleElement.style.transform = 'translateY(20px)';
+      
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % titles.length;
+        titleElement.textContent = titles[currentIndex];
+        
+        // Fade in
+        titleElement.style.opacity = '1';
+        titleElement.style.transform = 'translateY(0)';
+      }, 300);
+    }
+  }
+  
+  // Start rotation after page load
+  document.addEventListener('DOMContentLoaded', () => {
+    if (titleElement) {
+      titleElement.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      setInterval(rotateTitle, 3000); // Change every 3 seconds
+    }
+    
+    // Add click/touch interaction to name
+    const nameContainer = document.getElementById('name-container');
+    if (nameContainer) {
+      // Handle both click and touch events
+      nameContainer.addEventListener('click', createNameClickEffect);
+      nameContainer.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        createNameClickEffect();
+      });
+    }
+  });
+  
+  function createNameClickEffect() {
+    const nameContainer = document.getElementById('name-container');
+    const rect = nameContainer.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    
+    // Adjust sparkle count based on screen size
+    const sparkleCount = window.innerWidth < 640 ? 10 : 15;
+    const spreadRadius = window.innerWidth < 640 ? 100 : 200;
+    
+    // Create multiple sparkles
+    for (let i = 0; i < sparkleCount; i++) {
+      setTimeout(() => {
+        const sparkle = document.createElement('div');
+        const colors = ['#818cf8', '#f472b6', '#2dd4bf', '#fbbf24'];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const size = window.innerWidth < 640 ? 4 : 6;
+        
+        sparkle.style.cssText = `
+          position: fixed;
+          width: ${size}px;
+          height: ${size}px;
+          background: ${color};
+          border-radius: 50%;
+          pointer-events: none;
+          z-index: 9999;
+          left: ${centerX}px;
+          top: ${centerY}px;
+          animation: nameSparkle 1.5s ease-out forwards;
+          --random-x: ${(Math.random() - 0.5) * spreadRadius}px;
+          --random-y: ${(Math.random() - 0.5) * spreadRadius}px;
+        `;
+        
+        document.body.appendChild(sparkle);
+        setTimeout(() => sparkle.remove(), 1500);
+      }, i * 50);
+    }
+  }
+  
+  // Add CSS for name sparkle animation
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes nameSparkle {
+      0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(var(--random-x), var(--random-y)) scale(0);
+        opacity: 0;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+</script>

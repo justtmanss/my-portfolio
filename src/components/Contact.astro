@@ -1,0 +1,651 @@
+---
+---
+
+<section id="contact" class="py-24 relative bg-slate-900/30">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-mint-400 to-cosmic-400 bg-clip-text text-transparent">
+        Let's Connect
+      </h2>
+      <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+        Ready to build something amazing together? Drop me a message!
+      </p>
+      <div class="w-24 h-1 bg-gradient-to-r from-mint-400 to-cosmic-400 mx-auto rounded-full mt-6"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Contact Form -->
+      <div class="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-cosmic-500/20">
+        <div class="mb-6">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="font-mono text-cosmic-300 text-sm">$</span>
+            <div class="font-mono text-sm text-slate-300">
+              <span class="typing-text">send_message --to=manasvi</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="space-y-6" id="contact-form">
+          <div>
+            <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required
+              class="w-full px-4 py-3 bg-slate-700/30 border border-slate-600/30 rounded-lg text-white placeholder-slate-400 focus:border-cosmic-400/50 focus:ring-2 focus:ring-cosmic-400/20 focus:outline-none transition-all duration-300"
+              placeholder="Your name"
+            >
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required
+              class="w-full px-4 py-3 bg-slate-700/30 border border-slate-600/30 rounded-lg text-white placeholder-slate-400 focus:border-cosmic-400/50 focus:ring-2 focus:ring-cosmic-400/20 focus:outline-none transition-all duration-300"
+              placeholder="your@email.com"
+            >
+          </div>
+
+          <div>
+            <label for="subject" class="block text-sm font-medium text-slate-300 mb-2">Subject</label>
+            <input 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              required
+              class="w-full px-4 py-3 bg-slate-700/30 border border-slate-600/30 rounded-lg text-white placeholder-slate-400 focus:border-cosmic-400/50 focus:ring-2 focus:ring-cosmic-400/20 focus:outline-none transition-all duration-300"
+              placeholder="What's this about?"
+            >
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="5" 
+              required
+              class="w-full px-4 py-3 bg-slate-700/30 border border-slate-600/30 rounded-lg text-white placeholder-slate-400 focus:border-cosmic-400/50 focus:ring-2 focus:ring-cosmic-400/20 focus:outline-none transition-all duration-300 resize-none"
+              placeholder="Tell me about your project or just say hi!"
+            ></textarea>
+          </div>
+
+          <button 
+            type="submit"
+            id="submit-btn"
+            class="w-full px-6 py-4 bg-gradient-to-r from-cosmic-500 to-mint-500 rounded-lg font-semibold text-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cosmic-500/25 sparkle-on-hover disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+          >
+            <span class="flex items-center justify-center gap-2" id="button-content">
+              Send Message
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+              </svg>
+            </span>
+          </button>
+        </form>
+
+        <!-- Status Messages -->
+        <div id="form-status" class="mt-4 hidden">
+          <div id="success-message" class="hidden p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-green-300">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Message sent successfully! I'll get back to you soon.</span>
+            </div>
+          </div>
+          
+          <div id="error-message" class="hidden p-4 bg-red-500/20 border border-red-500/30 rounded-lg text-red-300">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span id="error-text">Something went wrong. Please try again or email me directly.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info & Social Links -->
+      <div class="space-y-8">
+        <div class="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-cosmic-500/20">
+          <h3 class="text-2xl font-semibold mb-6 text-mint-300">Get In Touch</h3>
+          
+          <div class="space-y-4">
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 bg-cosmic-500/20 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-cosmic-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-medium">Email</p>
+                <p class="text-slate-400 text-sm">manasvi.g.agrawal@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 bg-blush-500/20 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-blush-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-medium">Location</p>
+                <p class="text-slate-400 text-sm">Hyderabad, India</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 bg-mint-500/20 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-mint-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-medium">Response Time</p>
+                <p class="text-slate-400 text-sm">Usually within 24 hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-cosmic-500/20 to-blush-500/20 rounded-2xl p-8 border border-cosmic-400/30">
+          <h3 class="text-2xl font-semibold mb-6 text-white">Find Me Online</h3>
+          
+          <div class="grid grid-cols-2 gap-4">
+            <a 
+              href="https://github.com/justtmanss" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center gap-3 p-4 bg-slate-800/50 rounded-lg hover:bg-slate-700/50 transition-all duration-300 sparkle-on-hover"
+            >
+              <div class="w-8 h-8 bg-slate-700 rounded-lg flex items-center justify-center group-hover:bg-cosmic-500 transition-colors">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </div>
+              <span class="text-slate-300 group-hover:text-white font-medium">GitHub</span>
+            </a>
+
+            <a 
+              href="https://www.linkedin.com/in/manasvi-agrawal-847b48229/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center gap-3 p-4 bg-slate-800/50 rounded-lg hover:bg-slate-700/50 transition-all duration-300 sparkle-on-hover"
+            >
+              <div class="w-8 h-8 bg-slate-700 rounded-lg flex items-center justify-center group-hover:bg-blush-500 transition-colors">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </div>
+              <span class="text-slate-300 group-hover:text-white font-medium">LinkedIn</span>
+            </a>
+
+            <a 
+              href="https://x.com/MansAggs" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center gap-3 p-4 bg-slate-800/50 rounded-lg hover:bg-slate-700/50 transition-all duration-300 sparkle-on-hover"
+            >
+              <div class="w-8 h-8 bg-slate-700 rounded-lg flex items-center justify-center group-hover:bg-mint-500 transition-colors">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </div>
+              <span class="text-slate-300 group-hover:text-white font-medium">Twitter</span>
+            </a>
+
+            <a 
+              href="mailto:manasvi.g.agrawal@gmail.com" 
+              class="group flex items-center gap-3 p-4 bg-slate-800/50 rounded-lg hover:bg-slate-700/50 transition-all duration-300 sparkle-on-hover"
+            >
+              <div class="w-8 h-8 bg-slate-700 rounded-lg flex items-center justify-center group-hover:bg-cosmic-500 transition-colors">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <span class="text-slate-300 group-hover:text-white font-medium">Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Surprise Element - Secret Button -->
+        <div class="bg-slate-900/50 backdrop-blur-sm rounded-2xl p-6 border border-cosmic-500/20 relative overflow-hidden">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="flex space-x-2">
+              <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+              <div class="w-3 h-3 bg-yellow-500 rounded-full animate-pulse" style="animation-delay: 0.2s;"></div>
+              <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse" style="animation-delay: 0.4s;"></div>
+            </div>
+            <span class="text-xs font-mono text-slate-500 ml-2">secret.exe</span>
+          </div>
+          
+          <div class="font-mono text-sm space-y-2">
+            <div class="text-cosmic-300">$ echo "Easter Egg Found:)" </div>
+            <!-- Secret Interactive Button -->
+            <div class="mt-4 text-center">
+              <button 
+                id="secret-button"
+                class="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-white hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 sparkle-on-hover relative overflow-hidden group"
+              >
+                <span class="relative z-10 flex items-center gap-2">
+                  <span id="button-text">Find out whats hiding!</span>
+                  <svg class="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </span>
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .typing-text {
+    @apply inline-block;
+    animation: typewriter 4s ease-in-out infinite;
+  }
+
+  @keyframes typewriter {
+    0%, 90%, 100% { 
+      opacity: 1;
+    }
+    30%, 60% { 
+      opacity: 0.7;
+    }
+  }
+
+  kbd {
+    @apply font-mono font-semibold;
+  }
+
+  code {
+    @apply font-mono;
+  }
+</style>
+
+<script>
+  // Contact form submission
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const buttonContent = document.getElementById('button-content');
+    const formStatus = document.getElementById('form-status');
+    const successMessage = document.getElementById('success-message');
+    const errorMessage = document.getElementById('error-message');
+    const errorText = document.getElementById('error-text');
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(form);
+        const data = {
+          name: formData.get('name'),
+          email: formData.get('email'),
+          subject: formData.get('subject'),
+          message: formData.get('message')
+        };
+
+        // Validate required fields
+        if (!data.name || !data.email || !data.subject || !data.message) {
+          showError('Please fill in all fields.');
+          return;
+        }
+
+        // Show loading state
+        submitBtn.disabled = true;
+        buttonContent.innerHTML = `
+          <svg class="w-5 h-5 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+          </svg>
+          Sending...
+        `;
+
+        try {
+          // Send to Supabase Edge Function
+          const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`, {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+          });
+
+          const result = await response.json();
+
+          if (response.ok && result.success) {
+            showSuccess(result.message || 'Message sent successfully! I\'ll get back to you soon.');
+            form.reset();
+          } else {
+            throw new Error(result.error || 'Failed to send message');
+          }
+
+        } catch (error) {
+          console.error('Error sending message:', error);
+          showError(error.message || 'Failed to send message. Please try emailing me directly at manasvi.g.agrawal@gmail.com');
+        } finally {
+          // Reset button
+          submitBtn.disabled = false;
+          buttonContent.innerHTML = `
+            Send Message
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+            </svg>
+          `;
+        }
+      });
+    }
+
+    function showSuccess(message) {
+      formStatus.classList.remove('hidden');
+      successMessage.classList.remove('hidden');
+      errorMessage.classList.add('hidden');
+      successMessage.querySelector('span').textContent = message;
+      
+      // Hide after 5 seconds
+      setTimeout(() => {
+        formStatus.classList.add('hidden');
+        successMessage.classList.add('hidden');
+      }, 5000);
+    }
+
+    function showError(message) {
+      formStatus.classList.remove('hidden');
+      errorMessage.classList.remove('hidden');
+      successMessage.classList.add('hidden');
+      errorText.textContent = message;
+      
+      // Hide after 8 seconds
+      setTimeout(() => {
+        formStatus.classList.add('hidden');
+        errorMessage.classList.add('hidden');
+      }, 8000);
+    }
+
+    // Interactive surprise button functionality (keeping existing code)
+    const secretButton = document.getElementById('secret-button');
+    const buttonText = document.getElementById('button-text');
+    let clickCount = 0;
+    
+    const surprises = [
+      { text: '🎉 You found me!', color: 'from-green-500 to-blue-500' },
+      { text: '✨ Keep clicking!', color: 'from-pink-500 to-purple-500' },
+      { text: '🚀 Almost there', color: 'from-yellow-500 to-red-500' },
+      { text: '🎊 SURPRISE!', color: 'from-rainbow-500 to-cosmic-500' },
+      { text: '💫 You\'re awesome!', color: 'from-mint-500 to-blush-500' }
+    ];
+    
+    secretButton?.addEventListener('click', () => {
+      clickCount++;
+      
+      if (clickCount <= surprises.length) {
+        const surprise = surprises[clickCount - 1];
+        buttonText.textContent = surprise.text;
+        secretButton.className = secretButton.className.replace(/from-\w+-\d+\s+to-\w+-\d+/, surprise.color);
+        
+        // Create spectacular celebration effect
+        createSpectacularCelebration();
+        
+        if (clickCount === surprises.length) {
+          setTimeout(() => {
+            showFinalSurprise();
+          }, 1000);
+        }
+      }
+    });
+    
+    function createSpectacularCelebration() {
+      const colors = [
+        '#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7', '#dda0dd',
+        '#ff9ff3', '#54a0ff', '#5f27cd', '#00d2d3', '#ff9f43', '#10ac84',
+        '#ee5253', '#0abde3', '#3742fa', '#2f3542', '#ff3838', '#ff9500'
+      ];
+      
+      const buttonRect = secretButton.getBoundingClientRect();
+      const centerX = buttonRect.left + buttonRect.width / 2;
+      const centerY = buttonRect.top + buttonRect.height / 2;
+      
+      // Create 50 confetti pieces with wide spread
+      for (let i = 0; i < 50; i++) {
+        setTimeout(() => {
+          const confetti = document.createElement('div');
+          
+          // Random size for variety
+          const size = Math.random() * 8 + 4;
+          
+          // Random spread radius (much wider now!)
+          const spreadRadius = 200 + Math.random() * 300; // 200-500px radius
+          const angle = (Math.random() * 360) * (Math.PI / 180);
+          
+          // Calculate random position within the spread radius
+          const startX = centerX + Math.cos(angle) * (Math.random() * spreadRadius);
+          const startY = centerY + Math.sin(angle) * (Math.random() * spreadRadius);
+          
+          // Random horizontal drift
+          const horizontalDrift = (Math.random() - 0.5) * 400; // -200 to +200px drift
+          
+          // Random rotation
+          const rotation = Math.random() * 720; // 0-720 degrees
+          
+          // Random fall duration
+          const duration = 2 + Math.random() * 2; // 2-4 seconds
+          
+          confetti.style.cssText = `
+            position: fixed;
+            width: ${size}px;
+            height: ${size}px;
+            background: ${colors[Math.floor(Math.random() * colors.length)]};
+            border-radius: ${Math.random() > 0.5 ? '50%' : '0'};
+            pointer-events: none;
+            z-index: 9999;
+            left: ${startX}px;
+            top: ${startY}px;
+            animation: confettiExplosion ${duration}s ease-out forwards;
+            --horizontal-drift: ${horizontalDrift}px;
+            --rotation: ${rotation}deg;
+            --fall-distance: ${window.innerHeight + 100}px;
+          `;
+          
+          document.body.appendChild(confetti);
+          setTimeout(() => confetti.remove(), duration * 1000);
+        }, i * 20); // Stagger the creation for a burst effect
+      }
+      
+      // Add some extra sparkles that shoot out in all directions
+      for (let i = 0; i < 20; i++) {
+        setTimeout(() => {
+          const sparkle = document.createElement('div');
+          const angle = (i / 20) * 360 * (Math.PI / 180);
+          const distance = 150 + Math.random() * 200;
+          
+          sparkle.style.cssText = `
+            position: fixed;
+            width: 3px;
+            height: 3px;
+            background: #fff;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            left: ${centerX}px;
+            top: ${centerY}px;
+            animation: sparkleShoot 1.5s ease-out forwards;
+            --shoot-x: ${Math.cos(angle) * distance}px;
+            --shoot-y: ${Math.sin(angle) * distance}px;
+            box-shadow: 0 0 6px currentColor;
+          `;
+          
+          document.body.appendChild(sparkle);
+          setTimeout(() => sparkle.remove(), 1500);
+        }, i * 30);
+      }
+    }
+    
+    function showFinalSurprise() {
+      // Create a modal-like surprise
+      const modal = document.createElement('div');
+      modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        animation: fadeIn 0.5s ease-out;
+      `;
+      
+      modal.innerHTML = `
+        <div style="
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          padding: 2rem;
+          border-radius: 1rem;
+          text-align: center;
+          color: white;
+          max-width: 400px;
+          animation: slideIn 0.5s ease-out;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        ">
+          <h2 style="font-size: 2rem; margin-bottom: 1rem;">Congratulations!</h2>
+          <p style="margin-bottom: 1.5rem; line-height: 1.6;">
+            You found me! I enjoy creating cool little suprises. Such attention to detail is what makes a great developer.(and a happy one) 
+          </p>
+          <button onclick="this.parentElement.parentElement.remove()" style="
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+          " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            Awesome! 🎊
+          </button>
+        </div>
+      `;
+      
+      document.body.appendChild(modal);
+      
+      // Create final celebration burst
+      setTimeout(() => {
+        createFinalCelebrationBurst();
+      }, 500);
+      
+      // Auto-remove after 10 seconds
+      setTimeout(() => {
+        if (modal.parentElement) {
+          modal.remove();
+        }
+      }, 10000);
+    }
+    
+    function createFinalCelebrationBurst() {
+      const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7', '#dda0dd'];
+      
+      // Create confetti from all corners of the screen
+      for (let corner = 0; corner < 4; corner++) {
+        const startPositions = [
+          { x: 0, y: 0 }, // top-left
+          { x: window.innerWidth, y: 0 }, // top-right
+          { x: 0, y: window.innerHeight }, // bottom-left
+          { x: window.innerWidth, y: window.innerHeight } // bottom-right
+        ];
+        
+        const start = startPositions[corner];
+        
+        for (let i = 0; i < 15; i++) {
+          setTimeout(() => {
+            const confetti = document.createElement('div');
+            const size = Math.random() * 10 + 5;
+            
+            confetti.style.cssText = `
+              position: fixed;
+              width: ${size}px;
+              height: ${size}px;
+              background: ${colors[Math.floor(Math.random() * colors.length)]};
+              border-radius: 50%;
+              pointer-events: none;
+              z-index: 10001;
+              left: ${start.x}px;
+              top: ${start.y}px;
+              animation: finalBurst 3s ease-out forwards;
+              --target-x: ${window.innerWidth / 2 + (Math.random() - 0.5) * 400}px;
+              --target-y: ${window.innerHeight / 2 + (Math.random() - 0.5) * 400}px;
+            `;
+            
+            document.body.appendChild(confetti);
+            setTimeout(() => confetti.remove(), 3000);
+          }, i * 50 + corner * 200);
+        }
+      }
+    }
+    
+    // Add CSS animations
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes confettiExplosion {
+        0% {
+          transform: translateY(0) translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(var(--fall-distance)) translateX(var(--horizontal-drift)) rotate(var(--rotation));
+          opacity: 0;
+        }
+      }
+      
+      @keyframes sparkleShoot {
+        0% {
+          transform: translateX(0) translateY(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(var(--shoot-x)) translateY(var(--shoot-y));
+          opacity: 0;
+        }
+      }
+      
+      @keyframes finalBurst {
+        0% {
+          transform: translateX(0) translateY(0) scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: translateX(calc(var(--target-x) - var(--start-x))) translateY(calc(var(--target-y) - var(--start-y))) scale(1.2);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(calc(var(--target-x) - var(--start-x))) translateY(calc(var(--target-y) - var(--start-y) + 200px)) scale(0.5);
+          opacity: 0;
+        }
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      
+      @keyframes slideIn {
+        from { transform: translateY(-50px) scale(0.8); opacity: 0; }
+        to { transform: translateY(0) scale(1); opacity: 1; }
+      }
+    `;
+    document.head.appendChild(style);
+  });
+</script>
